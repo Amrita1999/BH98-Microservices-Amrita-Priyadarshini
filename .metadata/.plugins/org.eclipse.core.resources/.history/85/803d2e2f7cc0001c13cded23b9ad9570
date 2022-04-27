@@ -1,0 +1,70 @@
+package com.test;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+//class Student1{
+//	private int rollno;
+//	private String name;
+//	private int marks;
+//	
+//	Student1(int rollno,String name,int marks){
+//		this.rollno = rollno;
+//		this.name = name;
+//		this.marks = marks;
+//	}
+//	
+//	public void gradeCalculator() {
+//		if(this.marks>= 90 && this.marks<=100) {
+//			System.out.println("Student "+this.name+" scored "+ "Grade-A");
+//		}else if(this.marks>= 80 && this.marks<=90) {
+//			System.out.println("Student "+this.name+" scored "+ "Grade-B");
+//		}else if(this.marks>= 70 && this.marks<=80) {
+//			System.out.println("Student "+this.name+" scored "+ "Grade-C");
+//		}else {
+//			System.out.println("Student "+this.name+" scored "+ "Failed!");
+//		}
+//	}
+//}
+
+//public class GradeCalculatorCollection {
+//
+//	public static void main(String[] args) {
+//		Student1 st = new Student1(101,"Rajesh",78);
+//		st.gradeCalculator();
+//
+public class GradeCalculatorCollection {
+	
+	public static void main(String[] args) {
+		ArrayList<String> Student1 = new ArrayList<>();
+		
+		 Student Alex = new Student("Alex", 24);
+	     Student Albert = new Student("Albert", 74);
+	     Student Brook = new Student("Brook", 47);
+	     
+	     studentList.add(Alex);
+	        studentList.add(Albert);
+	        studentList.add(Brook);
+//		ArrayList<String> name = new ArrayList<>();
+//		ArrayList<Integer> rollno = new ArrayList<>();
+//		ArrayList<Double> marks = new ArrayList<>();
+//		
+//		
+//		if(marks.equals(90)  && marks.equals(100)) {
+//			System.out.println("Student "+name+" scored "+ "Grade-A");
+//		}else if(marks.equals(80) && marks.equals(90)) {
+//			System.out.println("Student "+name+" scored "+ "Grade-B");
+//		}else if(marks.equals(70) && marks.equals(80)) {
+//			System.out.println("Student " +name+" scored "+ "Grade-C");
+//		}else {
+//			System.out.println("Student "+name+" scored "+ "Failed!");
+//		}
+//		
+//		
+		
+		
+	}
+
+}

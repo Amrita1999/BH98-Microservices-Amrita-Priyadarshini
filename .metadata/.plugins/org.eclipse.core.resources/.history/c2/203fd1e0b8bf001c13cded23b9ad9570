@@ -1,0 +1,80 @@
+package com.test;
+
+import java.util.Scanner;
+
+class Employee {
+	private int id;
+	private String name;
+	private double sal;
+	private String desg;
+
+//	public Employee(int id, String name, double sal, String desg) {
+	public Employee() {
+     	super();
+		this.id = id;
+		this.name = name;
+		this.sal = sal;
+		this.desg = desg;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getSal() {
+		return sal;
+	}
+
+	public void setSal(double sal) {
+		this.sal = sal;
+	}
+
+	public String getDesg() {
+		return desg;
+	}
+
+	public void setDesg(String desg) {
+		this.desg = desg;
+	}
+
+}
+
+public class EmployeeBonus {
+	public static void calculatebonus(Employee emp) {
+		if (emp.getDesg().equals("Manager")) {
+			double bonus = emp.getSal() + 0.3 * emp.getSal();
+			System.out.println("Bonus of" + emp.getName() +" : "+ bonus);
+		} else if (emp.getDesg().equals("Lead")) {
+			double bonus = emp.getSal() + 0.25 * emp.getSal();
+			System.out.println("Bonus of" + emp.getName() +" : "+ bonus);
+		} else if (emp.getDesg().equals("Associates")) {
+			double bonus = emp.getSal() + 0.20 * emp.getSal();
+			System.out.println("Bonus of" + emp.getName() +" : "+ bonus);
+		}
+
+	}
+
+	public static void main(String[] args) {
+		 Scanner sc= new Scanner(System.in);
+      Employee emp = new Employee();
+      System.out.println("Enter Id:");
+      emp.setId(sc.nextInt());
+      System.out.println("Enter Name:");
+      emp.setName(sc.next());
+      System.out.println("Enter salary:");
+      emp.setSal(sc.nextDouble());
+
+	}
+}

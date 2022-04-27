@@ -1,0 +1,34 @@
+package com.collection;
+
+import java.util.Collections;
+import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class CardApplication {
+
+	public static void main(String[] args) {
+		Customer c1 = new Customer("Amrita", 22, 'F');
+		Customer c2 = new Customer("Saswat", 50, 'M');
+		Customer c3 = new Customer("Babul" ,28, 'M');
+		
+		CreditCard cc1 = new CreditCard("860634272712", "2025-20-05");
+		CreditCard cc2 = new CreditCard("144849876432", "2024-25-06");
+		CreditCard cc3 = new CreditCard("856387393738", "2026-02-08");
+		
+		Map<Date , Customer> cardmap = new LinkedHashMap<Date , Customer>(); //initialize map
+		cardmap.put(cc3.getExpire_date(), c3); // assign key value pair
+		cardmap.put(cc2.getExpire_date(), c2);
+		cardmap.put(cc1.getExpire_date(), c1);
+		
+		Map<Date ,Customer > m1 = new TreeMap(cardmap);
+		for(Date x:m1.keySet())
+		{
+			System.out.println(m1.get(x));
+		}
+	
+
+	}
+
+}

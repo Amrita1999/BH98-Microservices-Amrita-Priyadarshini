@@ -1,0 +1,19 @@
+package com.java8;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+			//WAP to print all names along with surname from different list.
+
+			List<String> mylist1 = Arrays.asList("Sarah","Sam","Smith");
+			List<String> mylist2 = Arrays.asList("Sharma","Nayak","Gupta");
+			for(String i : mylist2) {
+			mylist1.stream().map(x -> x+" "+i).forEach(y -> System.out.println(y));
+			}
+
+	}
+
+}

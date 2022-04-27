@@ -1,0 +1,21 @@
+package com.java8;
+
+import java.util.Comparator;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class SortingMonth {
+
+	public static void main(String[] args) {
+		SortedSet<String> monthSet = new TreeSet<String>(new Comparator<String>);
+		monthSet.add("Feb");
+		monthSet.add("Jan");
+		monthSet.add("Mar");
+		monthSet.add("Dec");
+		monthSet.add("Aug");
+
+		for (String value : monthSet) {
+			System.out.println(value);
+		}
+	}
+}

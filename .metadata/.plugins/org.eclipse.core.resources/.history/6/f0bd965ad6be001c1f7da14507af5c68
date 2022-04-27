@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Student {
+	public static void main(String args[])
+	{
+		float mark = 0;
+		System.out.println("Enter the mark of student:");
+		Scanner sc = new Scanner(System.in);
+		if(mark>=90 && mark <= 100)
+			System.out.println("A");
+		else if(mark>=80 && mark <= 90)
+			System.out.println("B");
+		
+		else if(mark>=70 && mark <= 80)
+			System.out.println("");
+		
+		else(mark>70)
+			System.out.println("Fail");
+		
+		
+	}
+
+}

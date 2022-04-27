@@ -1,0 +1,36 @@
+
+
+class Student1 {
+	private String s_name;
+	private int s_rollno;
+	private int s_mark;
+
+	Student1(String name, int rollno, int mark) {
+		this.s_mark = mark;
+		this.s_name = name;
+		this.s_rollno = rollno;
+	}
+
+	public void gradeCalculator()
+	{
+		if(this.s_mark>= 90 && this.s_mark<=100) {
+			System.out.println("Student "+this.s_name+" scored "+ "Grade-A");
+		}
+		else if(this.s_mark>= 80 && this.s_mark<=90) {
+				System.out.println("Student "+this.s_name+" scored "+ "Grade-B");
+		}
+		else if(this.s_mark>= 70 && this.s_mark<=80) {
+			System.out.println("Student "+this.s_name+" scored "+ "Grade-C");
+		}
+		else
+			System.out.println("Student "+this.s_name+" scored "+ "Failed");
+	}
+	
+public class GradeCalculator1 {
+
+	public static void main(String[] args) {
+		Student1 st = new Student1("Rajesh",101,78);
+		st.gradeCalculator();
+	}
+}
+}

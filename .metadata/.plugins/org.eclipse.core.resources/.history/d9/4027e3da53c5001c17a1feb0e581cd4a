@@ -1,0 +1,22 @@
+package com.java8;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class AAa {
+
+	public static void main(String[] args) {
+		Set<String> months = new LinkedHashSet<String>();
+		months.add("Feb");
+		months.add("Jan");
+		months.add("Mar");
+		months.add("Dec");
+		months.add("Aug");
+
+		for (String value : months) {
+			System.out.println(value);
+		}
+	}
+}

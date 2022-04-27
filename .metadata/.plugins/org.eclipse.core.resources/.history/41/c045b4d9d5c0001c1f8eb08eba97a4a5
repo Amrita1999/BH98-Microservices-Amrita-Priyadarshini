@@ -1,0 +1,7 @@
+package com.collection;
+
+
+public class CreditCard {
+	private String card_number;
+
+}
