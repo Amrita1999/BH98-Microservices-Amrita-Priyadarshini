@@ -1,0 +1,25 @@
+package com.mysite.main;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class StudentController {
+	
+	@Autowired
+	public final StudentRepository studRepository;
+	
+	StudentController( StudentRepository studRepository)
+	{
+		this.studRepository = studRepository;
+	}
+	
+	@GetMapping("/Student")
+	
+	List<Student> getAll(){
+		return studRepository.findAll();
+	}
+}

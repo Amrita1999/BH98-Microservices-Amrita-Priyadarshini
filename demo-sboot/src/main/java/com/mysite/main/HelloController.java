@@ -44,7 +44,6 @@ public class HelloController {
 
 	@RequestMapping("/Student/{name}/{marks}")
 	String stud(@PathVariable String name, @PathVariable int marks) {
-		//String grade = null;
 		if(marks>= 90 && marks<=100) {
 			return "Student "+name+" scored "+ "Grade-A";
 		}else if(marks>= 80 && marks<=90) {

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.mysite.main;
+
+/**
+ * @author amrita_priyadarshini
+ *
+ */
+public @interface Id {
+
+}
