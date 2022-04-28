@@ -72,13 +72,13 @@ public class Student1 {
 	
 	public String getGrade() {
 		if(marks>= 90 && marks<=100) {
-			return "Student "+name+" scored "+ "Grade-A";
+			return "Student scored "+ "Grade-A";
 		}else if(marks>= 80 && marks<=90) {
-			return ("Student "+name+" scored "+ "Grade-B");
+			return ("Student  scored "+ "Grade-B");
 		}else if(marks>= 70 && marks<=80) {
-			return("Student "+name+" scored "+ "Grade-C");
+			return("Student  scored "+ "Grade-C");
 		}else {
-			return("Student "+name+" scored "+ "Failed!");
+			return("Student scored "+ "Failed!");
 		} 
 	}
 	
