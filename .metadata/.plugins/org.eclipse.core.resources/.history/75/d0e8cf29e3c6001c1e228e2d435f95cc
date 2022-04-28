@@ -1,0 +1,51 @@
+package com.mysite.main;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+//@RestController
+//public class StudentController {
+//	
+//	public final StudentRepository studRepository;
+//	
+//	StudentController( StudentRepository studRepository)
+//	{
+//		this.studRepository = studRepository;
+//	}
+//	
+//	@GetMapping("/Student")
+//	
+//	List<Student> getAll(){
+//		return studRepository.findAll();
+//	}
+//}
+
+@RestController
+public class StudentController {
+	public final StudentRepository stud1Repository;
+
+	public StudentController(StudentRepository stud1Repository) {
+		this.stud1Repository = stud1Repository;
+	}
+	
+	@GetMapping("/Student1")
+	
+	String stud( String name,  int marks) {
+		if(marks>= 90 && marks<=100) {
+			return "Student "+name+" scored "+ "Grade-A";
+		}else if(marks>= 80 && marks<=90) {
+			return ("Student "+name+" scored "+ "Grade-B");
+		}else if(marks>= 70 && marks<=80) {
+			return("Student "+name+" scored "+ "Grade-C");
+		}else {
+			return("Student "+name+" scored "+ "Failed!");
+		} 
+	}
+	List<Student1> getAll(){
+		return stud1Repository.findAll();
+	}
+}
+	
